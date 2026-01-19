@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>TechWave</title>
     <link rel="stylesheet" href="./styles.css">
 
@@ -11,7 +13,37 @@
 
 </head>
 <body class="font-inter">
-    <header></header>
+    <header>
+        <div class="nav-container display-flex">
+            <!-- brand -->
+             <div class="brand">
+                <h1>Tech<span class="text-transparent bg-clip-text bg-linear-to-r from-[rgba(247,233,63,0.8)]
+             via-[rgba(251,9,180,0.6)] to-[rgba(145,0,248,1)]">Wave</span></h1>
+             </div>
+
+             <!-- navbars -->
+              <div class="navbars">
+                <ul class="display-flex">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Host</a></li>
+                </ul>
+              </div>
+
+              <!-- button or hamburger menu -->
+               <!-- <div class="borh display-flex"> -->
+                <!-- burger menu -->
+                <div id="burger-menu">
+                    <img src="./assets/hamburger-menu.png" alt="">
+                </div>
+
+                <!-- subscribe button -->
+                <div>
+                    <button class="subscribe-button bg-linear-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] rounded-full hover:cursor-pointer hover:shadow-[0_0_20px_rgba(251,9,180,0.6)]">Subscribe <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                </div>
+               <!-- </div> -->
+        </div>
+    </header>
 
     <main></main>
 
