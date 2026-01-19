@@ -44,6 +44,14 @@ header{
     font-size: 1rem;
     font-weight: 500;
 }
+#burger-menu{
+  margin-left: auto;
+}
+#burger-menu img{
+  display: block;
+  width: 20px;
+  height: auto;
+}
 .subscribe-button{
     font-size: 1rem;
     color: #FFFFFF;
@@ -57,17 +65,118 @@ header{
 
 
 /* banner styles */
+main .banner{
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 604px;
+}
+.hero-mic{
+    background-image: url(./assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    aspect-ratio: 1 / 1;
+
+    justify-content: center;
+    align-items: center;
+}
+.hero-item{
+    flex-direction: column;
+    min-height: 558px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.new{
+    width: 75px;
+    height: 38px;
+    background-color: rgba(0, 255, 136, 1);
+    border-radius: 1000px;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 100px;
+    left: 700px;
+}
+.new p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.title-button{
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.title-para{
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+.title-para p{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+.title-para h2{
+    font-size: 2.25rem;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+.hero-buttons{
+    /* border: 2px solid yellow; */
+    gap: 8px;
+}
+.spotify-btn, .sub2-btn{
+    padding: 12px 20px;
+}
+
 
 @media screen and (max-width: 576px) {
     header{
-        min-width: 440px;
+        min-width: 0;
     }
     .nav-container{
         padding: 10px 20px;
+        justify-content: space-between;
     }
     .brand h1{
         font-size: 1.25rem;
     }
     .subscribe-button, .navbars { display: none; }
-    #burger-menu { display: block; }
+    #burger-menu {
+        display: block; 
+        padding-right: 0;
+    }
+
+
+    main .banner{
+        background-size: 200% auto;   /* shows more of the wave */
+    background-position: center;
+    /* min-height: 466px; */
+    height: 466px;
+    }
+    .hero-item{
+        gap: 24px;
+    }
+    .hero-mic{
+        width: 200px;
+    }
+    .hero-mic img{
+        max-width: 80px;
+    }
+    .spotify-btn, .sub2-btn{
+        padding: 12px 20px;
+    }
+    .title-para p{
+        text-align: center;
+        /* flex-wrap: wrap; */
+    }
+    .new{
+        position: absolute;
+        top: 150px;
+        left: 200px;
+    }
 }
