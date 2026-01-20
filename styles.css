@@ -534,12 +534,16 @@ footer{
     }
 
     footer{
-        max-width: 440px;
+        /* max-width: 440px; */
+        /* width: 100%; */
         padding: 40px 20px;
         min-height: 248px;
     }
     /* .footer-container{
         padding: 0 8px;
+    } */
+     /* .footer-container{
+        gap: 15px;
     } */
     .footer-social{
         gap: 10px;
