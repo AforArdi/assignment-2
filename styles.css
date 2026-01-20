@@ -335,7 +335,6 @@ main .banner{
     border-radius: 30px;
     padding: 40px;
     align-items: center;
-    justify-content: center;
     gap: 24px;
 }
 .host-info{
@@ -463,6 +462,7 @@ main .banner{
         padding: 16px;
         /* max-width: 380px; */
         gap: 8px;
+        max-width: 400px;
     }
     .episodes-container{
         gap: 24px;
@@ -471,7 +471,31 @@ main .banner{
         flex-direction: column;
         gap: 16px;
     }
-    .episodes-title h2{
+    .episodes-title h2,
+    .host-title h2{
         font-size: 2rem;
+    }
+
+    .episodes-host{
+        gap: 60px;
+    }
+    .host-container{
+        gap: 24px;
+    }
+    .host-pic{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #2E90FF;
+    }
+    .host-card{
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .host-info{
+        align-items: center;
+        text-align: center;
     }
 }
