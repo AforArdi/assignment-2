@@ -14,16 +14,17 @@
 </head>
 <body class="font-inter">
     <header>
-        <div class="nav-container display-flex">
+        <div class="nav-container flex">
             <!-- brand -->
              <div class="brand">
-                <h1>Tech<span class="text-transparent bg-clip-text bg-linear-to-r from-[rgba(247,233,63,0.8)]
-             via-[rgba(251,9,180,0.6)] to-[rgba(145,0,248,1)]">Wave</span></h1>
+                <h1 class="h1-banner-footer">Tech<span class="text-transparent bg-clip-text bg-linear-to-r from-[rgba(247,233,63,0.8)]
+             via-[rgba(251,9,180,0.6)] to-[rgba(145,0,248,1)]">Wave</span>
+                </h1>
              </div>
 
              <!-- navbars -->
               <div class="navbars">
-                <ul class="display-flex">
+                <ul class="flex">
                     <li><a href="">About</a></li>
                     <li><a href="">Episodes</a></li>
                     <li><a href="">Host</a></li>
@@ -31,7 +32,7 @@
               </div>
 
               <!-- button or hamburger menu -->
-               <!-- <div class="borh display-flex"> -->
+               <!-- <div class="borh flex"> -->
                 <!-- burger menu -->
                 <div id="burger-menu">
                     <img src="./assets/hamburger-menu.png" alt="">
@@ -47,27 +48,27 @@
 
     <main>
         <section class="banner">
-            <div class="hero-item display-flex">
+            <div class="hero-item flex">
 
-                <div class="hero-mic display-flex">
+                <div class="hero-mic flex">
                     <div>
                         <img src="./assets/microphone.png" alt="">
                     </div>
 
                 </div>
 
-                <div class="new display-flex">
+                <div class="new flex">
                     <p>NEW</p>
                 </div>
 
-                <div class="title-button display-flex">
-                    <div class="title-para display-flex">
+                <div class="title-button flex">
+                    <div class="title-para flex">
                         <h2>TechWave</h2>
                         <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
                     </div>
 
                     <!-- buttons -->
-                     <div class="hero-buttons display-flex">
+                     <div class="hero-buttons flex">
                         <button class="spotify-btn text-base text-white font-semibold bg-linear-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] rounded-full hover:cursor-pointer hover:shadow-[0_0_20px_rgba(251,9,180,0.6)]"><i class="fa-brands fa-spotify" style="color: #ffffff;"></i> Listen on Spotify</button>
 
                         <button class="sub2-btn text-base text-white border border-[#00FF88] hover:shadow-[0_0_16px_rgba(0,255,138,0.6)] hover:cursor-pointer rounded-full"><i class="fa-regular fa-envelope" style="color: #00ff88;"></i> Subscribe</button>
@@ -245,6 +246,38 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-container flex">
+            <div class="footer-title">
+                <h1 class="h1-footer">
+                    Tech<span class="text-transparent bg-clip-text bg-linear-to-r from-[rgba(247,233,63,0.8)]
+             via-[rgba(251,9,180,0.6)] to-[rgba(145,0,248,1)]">Wave</span>
+                </h1>
+            </div>
+
+            <div class="footer-social flex">
+                <a class="social-name flex" href="">
+                    <img src="./assets/spotify.png" alt="">
+                    <span class="footerp">Spotify</span>
+                </a>
+                <a class="social-name flex" href="">
+                    <img src="./assets/apple-podcast.png" alt="">
+                    <span class="footerp">Apple Podcasts</span>
+                </a>
+                <a class="social-name flex" href="">
+                    <img src="./assets/youtube-podcast.png" alt="">
+                    <span class="footerp">YouTube</span>
+                </a>
+                <a class="social-name flex" href="">
+                    <img src="./assets/twitter.png" alt="">
+                    <span class="footerp">Twitter</span>
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p class="samep">&copy; 2026 TechWave Podcast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

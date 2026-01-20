@@ -38,7 +38,16 @@
     font-weight: 600;
     color: #00FF88;
 }
-
+.footerp{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.h1-banner-footer{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
 
 /* header styles*/
 header{
@@ -50,11 +59,6 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 15px 150px;
-}
-.brand h1{
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #FFFFFF;
 }
 .navbars ul{
     align-items: center;
@@ -121,7 +125,7 @@ main .banner{
 
     position: absolute;
     top: 100px;
-    left: 700px;
+    right: 640px;
 }
 .new p{
     font-size: 1.2rem;
@@ -310,7 +314,6 @@ main .banner{
     align-items: center;
     gap: 6px;
 }
-
 .host-container{
     flex-direction: column;
     align-items: center;
@@ -343,7 +346,6 @@ main .banner{
     align-items: flex-start;
     justify-content: center;
 }
-
 /* .host-pic{
     border-radius: 50%;
     overflow: hidden;
@@ -354,18 +356,50 @@ main .banner{
     height: 200px;
     display: block;
 } */
-
 .host-pic{
   width: 400px;
   border-radius: 50%;
   border: 1px solid #2E90FF;
 }
-
-
 .host-name h4{
     font-size: 2rem;
     font-weight: 700;
     color: #FFFFFF;
+}
+
+
+/* footer styles */
+footer{
+    background-image: url(./assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    padding: 120px;
+    min-height: 412px;
+}
+.footer-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+}
+.footer-social{
+    gap: 40px;
+    justify-content: center;
+}
+.social-name{
+    gap: 2.5px;
+}
+.social-name img{
+    width: 24px;
+    aspect-ratio: 1 / 1;
+}
+.h1-footer{
+    font-size: 5rem;
+    color: #FFFFFF;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 576px) {
@@ -497,5 +531,22 @@ main .banner{
     .host-info{
         align-items: center;
         text-align: center;
+    }
+
+    footer{
+        max-width: 440px;
+        padding: 40px 20px;
+        min-height: 248px;
+    }
+    /* .footer-container{
+        padding: 0 8px;
+    } */
+    .footer-social{
+        gap: 10px;
+        flex-wrap: wrap;
+        place-items: center;
+    }
+    .h1-footer{
+        font-size: 2.5rem;
     }
 }
