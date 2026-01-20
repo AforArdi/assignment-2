@@ -172,6 +172,18 @@ main .banner{
     padding: 12px 20px;
 }
 
+/* button animation (google helped) */
+.animated-button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.animated-button:hover {
+  transform: scale(1.05);
+}
+.animated-button:active {
+  transform: scale(0.95);
+}
+
 
 /* about styles */
 .about{
