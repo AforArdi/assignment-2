@@ -454,4 +454,24 @@ main .banner{
     .why-container{
         gap: 16px;
     }
+
+
+    .episodes-host{
+        padding: 40px 20px;
+    }
+    .episodes-card{
+        padding: 16px;
+        /* max-width: 380px; */
+        gap: 8px;
+    }
+    .episodes-container{
+        gap: 24px;
+    }
+    .video-container{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .episodes-title h2{
+        font-size: 2rem;
+    }
 }
